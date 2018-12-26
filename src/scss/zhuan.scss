@@ -27,13 +27,38 @@ section {
         width: 30%;
         height: 100%;
         background: #f8f7f6;
+        .ul {
+            li {
+                height: pxTorem(50px);
+                line-height: pxTorem(50px);
+                text-align: center;
+                border-bottom: 1px solid #ccc;
+            }
+            li.active {
+                color: red;
+            }
+        }
+
     }
     .right {
-        width: 70%;
+        width: 75%;
         height: 100%;
         div {
             display: flex;
             @include flexWrap(wrap);
+            dl {
+                margin: pxTorem(10px);
+                dt {
+                    >img {
+                        width: pxTorem(80px);
+                        height: pxTorem(100px);
+                    }
+                }
+                dd {
+                    font-size: pxTorem(13px);
+                }
+            }
+
         }
     }
 }
