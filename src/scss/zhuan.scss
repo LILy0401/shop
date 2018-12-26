@@ -16,6 +16,17 @@ body {
 header {
     width: 100%;
     height: pxTorem(50px);
+    @include box_flex;
+    border-bottom: 1px solid #ccc;
+    line-height: pxTorem(50px);
+    i.icon {
+        font-size: pxTorem(20px);
+        margin-left: pxTorem(10px);
+    }
+    span {
+        font-size: pxTorem(20px);
+        margin-left: pxTorem(10px);
+    }
 }
 
 section {
